@@ -1,0 +1,154 @@
+.artdirector {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--primaryPurple);
+}
+
+.scroll {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  p {
+    opacity: 0.6;
+  }
+
+  button {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    border: none;
+    transform: rotate(90deg);
+    img {
+      width: 20px;
+      aspect-ratio: 1/1;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+  max-height: 100vh;
+  min-height: 100vh;
+  position: relative;
+  &__left {
+    display: flex;
+    flex-direction: column;
+
+    &__skills {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: 0em;
+      margin: 12px 0;
+    }
+
+    &__desc {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 40px;
+      letter-spacing: 0em;
+      color: #fff;
+      max-width: 50%;
+      margin-top: 100px;
+      margin-bottom: 150px;
+    }
+  }
+
+  &__right {
+    img {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  h1 {
+    color: #beeb91;
+    font-size: 64px;
+    font-family: inter;
+    margin: 0;
+    font-weight: 900;
+  }
+}
+
+.work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-size: 392px;
+    font-weight: 900;
+    line-height: 474px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    margin: auto;
+  }
+}
+
+.work-items {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 116px;
+  width: calc(100% - 176px);
+  padding: 0 88px;
+  &__item {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    border: 2px solid #ffffff66;
+    background-color: #6c60f5cc;
+    backdrop-filter: blur(12px);
+    border-radius: 24px;
+    overflow: hidden;
+    height: 400px;
+    transition: all 0.3s;
+
+    &__img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 484px;
+    }
+
+    &__content {
+      padding: 96px 80px;
+      h2 {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 60px;
+        color: #fff;
+        margin: 0;
+        text-decoration: none;
+      }
+      p {
+        margin-top: 16px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        color: #fff;
+      }
+      img {
+        margin-top: 56px;
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  &__item:hover {
+    background-color: #e160f5cc;
+  }
+}

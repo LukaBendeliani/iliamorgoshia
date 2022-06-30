@@ -2,9 +2,7 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  cursor: pointer;
   p {
-    color: #fff;
     font-family: inter;
     font-size: 30px;
     line-height: 0.9;
@@ -12,6 +10,9 @@
 
   &__left {
     background-color: var(--primaryPurple);
+    p {
+      color: #fff;
+    }
 
     &__ball {
       width: 75%;
@@ -21,7 +22,9 @@
 
   &__right {
     background-color: var(--primaryYellow);
-
+    p {
+      color: #6d6060;
+    }
     &__ball {
       width: 85%;
       background-color: #f9dccc;
@@ -43,10 +46,6 @@
     aspect-ratio: 1/1;
     position: absolute;
   }
-}
-
-.side:hover {
-  width: 95%;
 }
 
 .blured {
@@ -80,4 +79,11 @@
   gap: 20px;
   align-items: center;
   justify-content: center;
+}
+
+.ilia {
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
 }

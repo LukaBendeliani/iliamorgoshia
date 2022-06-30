@@ -2,8 +2,14 @@
   width: clamp(98px, 98px, 98px);
   height: clamp(98px, 98px, 98px);
   border-radius: 50%;
-  background-color: #d9d9d9;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.navigating-button:hover {
+  transform: scale(1.2);
 }

@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import NavigatingButton from "../../components/NavigatingButton";
+import iliaSVG from "../../assets/images/ilia.svg";
 import "./index.scss";
 
 const Home = () => {
@@ -8,30 +10,25 @@ const Home = () => {
         <div className="container__left__ball side__ball"></div>
         <div className="blured">
           <h1 className="art-director">Art Director</h1>
-          <span className="row">
-            <p>
-              UI/UX
-              <br /> Design <br />
-              Concepting
-            </p>
+          <p>UI/UX Design Concepting</p>
+          <Link to="/art-director">
             <NavigatingButton />
-          </span>
+          </Link>
         </div>
       </div>
 
       <div className="container__right side">
         <div className="container__right__ball side__ball"></div>
         <div className="blured">
-          <h1 className="videographer">Videographer</h1>
-          <span className="row">
-            <p>
-              Editing
-              <br /> Producing <br />
-              Directing
-            </p>
+          <h1 className="videographer">Videography</h1>
+          <p>Editing Producing Directing</p>
+          <Link to="/videography">
             <NavigatingButton />
-          </span>
+          </Link>
         </div>
+      </div>
+      <div className="ilia">
+        <img src={iliaSVG} alt="ilia" />
       </div>
     </div>
   );
