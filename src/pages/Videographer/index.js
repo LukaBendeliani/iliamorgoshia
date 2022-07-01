@@ -2,11 +2,6 @@ import arrowSVG from "../../assets/icons/arrow-white.svg";
 import arrowRightWhiteSVG from "../../assets/icons/arrow-right-whtie.svg";
 
 import handSVG from "../../assets/images/hand.svg";
-import vodkaSVG from "../../assets/images/vodka.svg";
-import foxySVG from "../../assets/images/foxy.svg";
-import bookcoverSVG from "../../assets/images/book-cover.svg";
-import indeedSVG from "../../assets/images/indeed.svg";
-import uiuxworkSVG from "../../assets/images/uiuxwork.svg";
 
 import "./index.scss";
 import { useHistory } from "react-router-dom";
@@ -19,35 +14,30 @@ const Videography = () => {
       desc: "Concept Design of Vodka Packiging",
       link: "/vodka",
       background: "#000",
-      img: vodkaSVG,
     },
     {
       title: "Foxy Browser Branding",
       desc: "Concept Branding For browser",
       link: "/foxy",
       background: "#000",
-      img: foxySVG,
     },
     {
       title: "Book Cover",
       desc: "Design art for Audio book",
       link: "/book-cover",
       background: "#fff",
-      img: bookcoverSVG,
     },
     {
       title: "Indeed Campaign",
       desc: "Posters",
       link: "/indeed",
       background: "#fff",
-      img: indeedSVG,
     },
     {
       title: "UX/UI Work",
       desc: "Website Designe",
       link: "/uiuxwork",
       background: "#fff",
-      img: uiuxworkSVG,
     },
   ];
 
@@ -79,10 +69,11 @@ const Videography = () => {
         <h1>WORK</h1>
       </div>
       <div className="work-items">
-        {workItems.map(({ title, desc, img, background, link }) => (
+        {workItems.map(({ title, desc, img, background, link }, index) => (
           <div
             className="work-items__item"
             onClick={() => handleNavigate(link)}
+            key={index}
           >
             <div className="work-items__item__img" style={{ background }}>
               <img src={img} alt={title} />

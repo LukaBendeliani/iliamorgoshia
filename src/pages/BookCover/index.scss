@@ -1,0 +1,43 @@
+.book-cover {
+  width: 100vw;
+  background-color: #1c8a8b;
+  color: #fff;
+  padding-bottom: 300px;
+  &__poster {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    width: 80%;
+    margin: auto;
+
+    h1 {
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 58px;
+    }
+
+    p {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 29px;
+    }
+  }
+
+  &__book {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+    p {
+      width: 50%;
+      margin: auto;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 37px;
+    }
+  }
+}

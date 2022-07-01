@@ -83,7 +83,12 @@
 
 .ilia {
   position: absolute;
-  left: 50%;
+  cursor: pointer;
+  left: calc(50% - 36px);
   top: 50px;
-  transform: translateX(-50%);
+  transition: all 0.2s;
+}
+
+.ilia:hover {
+  transform: scale(1.2);
 }

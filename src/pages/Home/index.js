@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import NavigatingButton from "../../components/NavigatingButton";
 import iliaSVG from "../../assets/images/ilia.svg";
 import "./index.scss";
 
 const Home = () => {
+  const history = useHistory();
+
   return (
     <div className="container">
       <div className="container__left side">
@@ -27,7 +29,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <div className="ilia">
+      <div className="ilia" onClick={() => history.push("/about")}>
         <img src={iliaSVG} alt="ilia" />
       </div>
     </div>

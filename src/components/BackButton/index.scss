@@ -1,0 +1,20 @@
+.back-button {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  width: clamp(55px, 55px, 55px);
+  height: clamp(55px, 55px, 55px);
+  border-radius: 50%;
+  background-color: #d9d9d966;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  transform: rotate(180deg);
+  padding: 5px;
+}
+
+.navigating-button:hover {
+  transform: scale(1.2);
+}

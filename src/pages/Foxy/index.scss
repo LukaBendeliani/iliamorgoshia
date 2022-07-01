@@ -1,0 +1,51 @@
+.foxy {
+  background-color: #000000;
+  color: #fff;
+  padding: 180px 0;
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 136px;
+  }
+  &__content {
+    width: 80%;
+    margin: auto;
+    &__poster {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 80%;
+        align-self: flex-end;
+      }
+      p {
+        align-self: flex-end;
+        width: 75%;
+      }
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 58px;
+      margin: 0;
+    }
+    span {
+      display: flex;
+      :first-child {
+        white-space: nowrap;
+      }
+    }
+    p {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 29px;
+      text-align: left;
+    }
+  }
+  &__wallposter {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+  }
+}
