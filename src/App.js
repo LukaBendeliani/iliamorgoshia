@@ -6,6 +6,9 @@ import Foxy from "./pages/Foxy";
 import Home from "./pages/Home";
 import Indeed from "./pages/Indeed";
 import Vodka from "./pages/Vodka";
+import Videography from "./pages/Videographer";
+import Happiness from "./pages/Happiness";
+import Ephemerels from "./pages/Ephemerels";
 
 const App = () => {
   return (
@@ -18,6 +21,9 @@ const App = () => {
         <Route exact path="/book-cover" component={BookCover} />
         <Route exact path="/indeed" component={Indeed} />
         <Route exact path="/about" component={About} />
+        <Route exact path="/happiness" component={Happiness} />
+        <Route exact path="/ephemerels" component={Ephemerels} />
+        <Route exact path="/videography" component={Videography} />
       </Switch>
     </Router>
   );
