@@ -15,10 +15,10 @@
     overflow: hidden;
     img {
       position: absolute;
-      inset: 0;
     }
     :first-child {
       z-index: 100;
+      bottom: 0;
     }
   }
 
