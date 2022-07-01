@@ -1,2 +1,131 @@
+
 .videography {
+    background-color: var(--primaryYellow);
+    width: 100%;    
+    min-height: 100vh;
+    display: grid;
+    gap: 1em;
+    &__hand {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        z-index: 0;
+    }
+
+    &__introduction {
+        width: 30%;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-left: auto;
+        padding-right: 10em;
+
+        h1 {
+        font-size: 80px;        
+        font-weight: 900;
+        letter-spacing: 0em;
+        color: #9391EB;
+        z-index: 15;
+        margin-top: 3em;
+        margin-bottom: 0;
+        }
+        
+        p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: #6D6060;
+        }
+
+        h3 {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: #6D6060;
+        margin-top: 4em;
+        }
+    }
+    .videography-work {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1 {
+          font-size: 392px;
+          font-weight: 900;
+          line-height: 474px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #fff;
+          margin: auto;
+        }
+      }
+      
+      .videography-work-items {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 90px; //116px
+        width: calc(100% - 176px);
+        padding: 0 88px;
+        padding-bottom: 2em;
+       
+      
+        &__item {
+          cursor: pointer;
+          width: 100%;
+          display: flex;
+          border: 2px solid #ffffff66;
+          background-color: #FFC751;
+          backdrop-filter: blur(12px);
+          border-radius: 24px;
+          overflow: hidden;
+          height: 400px;
+          transition: all 0.3s;
+          
+          &__img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 484px;
+          }
+      
+          &__content {
+            padding: 96px 80px;
+            transition: all 0.2s ease-in-out;
+            h2 {
+              font-size: 40px;
+              font-weight: 500;
+              line-height: 60px;
+              color: #fff;
+              margin: 0;
+              text-decoration: none;
+            }
+            p {
+              margin-top: 16px;
+              font-size: 24px;
+              font-weight: 400;
+              line-height: 36px;
+              color: #fff;
+            }
+            img {
+              margin-top: 56px;
+              transition: all 0.3s;
+            }
+          }
+        }
+    }  
+    .videography-work-items__item:hover {
+        background-color: #FF4A3FCC;
+        .arrow-right{
+            transform: translateX(20px);
+            
+        }
+    }
+
 }

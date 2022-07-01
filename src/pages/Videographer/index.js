@@ -1,87 +1,69 @@
 import arrowSVG from "../../assets/icons/arrow-white.svg";
+import handSVG from "../../assets/images/hand-video.svg"
 import arrowRightWhiteSVG from "../../assets/icons/arrow-right-whtie.svg";
-
-import handSVG from "../../assets/images/hand.svg";
-
+import happiness from "../../assets/images/hap.svg";
+import ephemerels from "../../assets/images/ephemerels.svg";
 import "./index.scss";
+import "../ArtDirector/index.scss"
 import { useHistory } from "react-router-dom";
+import { useRef } from "react";
 
 const Videography = () => {
   const history = useHistory();
   const workItems = [
     {
-      title: "Mango Flavored Vodka",
-      desc: "Concept Design of Vodka Packiging",
-      link: "/vodka",
+      title: "The Path to Happiness",
+      desc: "Documentary Film",
+      link: "/happiness",
       background: "#000",
+      img: happiness,
     },
     {
       title: "Foxy Browser Branding",
       desc: "Concept Branding For browser",
-      link: "/foxy",
+      link: "/ephemerels",
       background: "#000",
+      img: ephemerels,
     },
-    {
-      title: "Book Cover",
-      desc: "Design art for Audio book",
-      link: "/book-cover",
-      background: "#fff",
-    },
-    {
-      title: "Indeed Campaign",
-      desc: "Posters",
-      link: "/indeed",
-      background: "#fff",
-    },
-    {
-      title: "UX/UI Work",
-      desc: "Website Designe",
-      link: "/uiuxwork",
-      background: "#fff",
-    },
+    
   ];
 
   const handleNavigate = (url) => history.push(url);
-
+  const workRef = useRef()
+  const moveToWork = () => {
+    workRef.current.scrollIntoView({behavior: "smooth"});
+  }
   return (
     <div className="videography">
-      <div className="content">
-        <div className="content__left">
-          <h1>Art Direction</h1>
-          <p className="content__left__skills">UI/UX, Design, Concepting</p>
-          <p className="content__left__desc">
-            I am an Freelancer from Georgia, Tbilisi. I am currently studying in
-            Miami Ad School.
-          </p>
-
-          <span className="scroll">
-            <button>
-              <img src={arrowSVG} alt="arrow" />
+      <img alt= "hand" src={handSVG} className="videography__hand"></img>
+      <div className="videography__introduction">
+        <h1>Videography</h1>
+        <p>Editing, Producing, directing</p>
+        <h3>I am an Self Taught Videographer from Georgia, Tbilisi. My Passsion is Film.</h3>
+        <span className="scroll" onClick={moveToWork}>
+            <button className="scroll__arrow" style={{ cursor: "pointer" }}>
+              <img src={arrowSVG} style={{width: "28px"}} alt="arrow" />
             </button>
             <p>Scroll down</p>
           </span>
-        </div>
-        <div className="content__right">
-          <img src={handSVG} alt="hand" />
-        </div>
       </div>
-      <div className="work">
-        <h1>WORK</h1>
+      <div className="videography-work" ref={workRef}>
+        <h1 style={{marginTop: "180px"}}>WORK</h1>
       </div>
-      <div className="work-items">
-        {workItems.map(({ title, desc, img, background, link }, index) => (
+      <div className="videography-work-items">
+        {workItems.map(({ title, desc, img, background, link }) => (
           <div
-            className="work-items__item"
+            className="videography-work-items__item "
             onClick={() => handleNavigate(link)}
             key={index}
           >
-            <div className="work-items__item__img" style={{ background }}>
-              <img src={img} alt={title} />
+            <div className="videography-work-items__item__img" style={{ background }}>
+              <img src={img} style={{transform: "scale(1.2)"}} alt={title} />
             </div>
-            <div className="work-items__item__content">
+            <div className="videography-work-items__item__content ">
               <h2>{title}</h2>
               <p>{desc}</p>
-              <img src={arrowRightWhiteSVG} alt="arrow pointing right" />
+              <img src={arrowRightWhiteSVG} alt="arrow pointing right" className="arrow-right " />
             </div>
           </div>
         ))}
