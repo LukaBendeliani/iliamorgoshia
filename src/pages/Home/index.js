@@ -11,8 +11,8 @@ const Home = () => {
       <div className="container__left side">
         <div className="container__left__ball side__ball"></div>
         <div className="blured">
-          <h1 className="art-director">Art Director</h1>
-          <p>UI/UX Design Concepting</p>
+          <h1 className="art-director">Art Direction</h1>
+          <p>UI/UX, Design, Concepting</p>
           <Link to="/art-director">
             <NavigatingButton />
           </Link>
@@ -23,7 +23,7 @@ const Home = () => {
         <div className="container__right__ball side__ball"></div>
         <div className="blured">
           <h1 className="videographer">Videography</h1>
-          <p>Editing Producing Directing</p>
+          <p>Editing, Producing, directing</p>
           <Link to="/videography">
             <NavigatingButton />
           </Link>

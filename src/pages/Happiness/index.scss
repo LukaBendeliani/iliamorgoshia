@@ -1,13 +1,15 @@
-.happiness {
-  width: 100%;
+.happiness-container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   grid-template-columns: 1;
   gap: 1em;
-  padding: 0 3em;
   background-color: var(--primaryYellow);
-  padding: 100px;
+}
+.happiness {
+  width: 80%;
+  margin: auto;
+  
   h3 {
     width: 729px;
     height: 60px;
@@ -30,11 +32,15 @@
 .vid {
   display: flex;
   align-self: center;
-  margin: 7em 0;
-  img {
-    height: 15em;
-    transform: scale(2);
-  }
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 960px;
+}
+
+.video-player {
+  // width: 100%;
+  // height: 100%;
 }
 
 .role {

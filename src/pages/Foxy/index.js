@@ -26,10 +26,8 @@ const Foxy = () => {
           <div className="foxy__content__poster">
             <img src={putinylea} alt="poster" />
             <p>
-              This is a concept branding forsecure browser. This idea was
-              created when war broke out between russia and ukrain. For everyone
-              it is very importent to have privacy. this brand is inteligent and
-              respects lack of disturbance.
+              This is a concept brand for a secure browser. This idea was created.
+              When war broke out between Russia and Ukraine, For everyone, it is very important to have privacy. This brand is intelligent and respects the lack of disturbance.
             </p>
           </div>
         </span>

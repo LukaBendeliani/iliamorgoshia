@@ -40,8 +40,12 @@ const Vodka = () => {
         </div>
 
         <p>
-          This vodka design was created as a concept. pakiging for vodka. New
-          drinks are becoming  more and more innovative and modern. Therefore
+          This vodka design was created as a concept.
+
+          pakiging for vodka. New drinks are becoming
+
+          more and more innovative and modern. Therefore
+
           Packiging should fit the new identity of a drink.
         </p>
       </div>

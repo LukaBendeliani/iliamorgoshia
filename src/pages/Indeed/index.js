@@ -33,10 +33,7 @@ const Indeed = () => {
       </div>
       <Carousel slides={slides} />
       <p className="indeed__desc">
-        Ever felt like your not suitable for your job. Sometimes people tend to
-        Change thair personality to fit in a job. This campaign for indeed is
-        the relatable for people like that. Indeed claims that you need to do
-        one search to find job suitable for you
+        Ever felt like you were not suitable for your job? Sometimes people tend to change their personalities to fit into a job. This campaign, indeed, is relatable for people like that. Indeed claims that you need to do one search to find a job suitable for you.
       </p>
     </div>
   );

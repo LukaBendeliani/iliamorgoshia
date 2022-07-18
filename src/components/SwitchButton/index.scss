@@ -1,0 +1,45 @@
+.switch-button-right {
+    width: clamp(47px, 47px, 47px);
+    height: clamp(47px, 47px, 47px);
+    border-radius: 50%;
+    background-color: #FDBD9A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    z-index: 10;
+    img {
+        transform: scale(0.6);
+    }
+}
+
+.switch-button-right:hover {
+    transform: scale(1.2);
+}
+
+.switch-button-left {
+    width: clamp(47px, 47px, 47px);
+    height: clamp(47px, 47px, 47px);
+    border-radius: 50%;
+    background-color: #5953F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    z-index: 10;
+    img {
+        transform: scale(0.6) rotate(180deg);
+    }
+}
+
+.switch-button-left:hover {
+    transform: scale(1.2);
+}

@@ -25,9 +25,7 @@ const BookCover = () => {
       <div className="book-cover__book">
         <img src={book} alt="book cover" />
         <p>
-          This art was inspired by book itself. It's about the lost story of a
-          man who traveled around the globe. the main protagonist faced many
-          obstacles. his name was lost as a first man who circled the globe
+          This art was inspired by the book itself. It's about the lost story of a man who traveled around the globe. The main protagonist faced many obstacles. His name was lost as the first man who circled the globe.
         </p>
       </div>
     </div>

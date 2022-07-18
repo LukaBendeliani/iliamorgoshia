@@ -1,12 +1,12 @@
 import { useRef } from "react";
 import { useHistory } from "react-router-dom";
+import SwitchButton from "../../components/SwitchButton";
 
 import vodka from "../../assets/images/vodka/mango-flavored-vodka.jpg";
 import foxy from "../../assets/images/foxy/foxy.png";
 import bookcover from "../../assets/images/book-cover/book-cover.png";
 import indeed from "../../assets/images/indeed/indeed.png";
 import uiuxwork from "../../assets/images/uiux/uiuxwork.png";
-
 import arrowSVG from "../../assets/icons/arrow-white.svg";
 import arrowRightWhiteSVG from "../../assets/icons/arrow-right-whtie.svg";
 import handSVG from "../../assets/images/hand.svg";
@@ -88,16 +88,17 @@ const ArtDirector = () => {
   };
 
   return (
+    <>
+    <SwitchButton />
     <div className="artdirector">
       <div className="content">
         <div className="content__left">
           <h1>Art Direction</h1>
           <p className="content__left__skills">UI/UX, Design, Concepting</p>
           <p className="content__left__desc">
-            I am an Freelancer from Georgia, Tbilisi. I am currently studying in
-            Miami Ad School.
+            I am an Freelancer from Georgia, Tbilisi.
+            I am currently studying in Miami Ad School.
           </p>
-
           <span className="scroll" onClick={scrollToWork}>
             <button className="scroll__arrow" style={{ cursor: "pointer" }}>
               <img src={arrowSVG} alt="arrow" />
@@ -135,6 +136,7 @@ const ArtDirector = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 
