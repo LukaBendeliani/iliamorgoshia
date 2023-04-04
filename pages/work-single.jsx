@@ -1,9 +1,25 @@
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Footer from "../src/layout/Footer";
 import Layout from "../src/layout/Layout";
 import { mGalleryCarousel } from "../src/sliderProps";
+import works from "../works.json";
+
 const WorkSingle = () => {
+  const router = useRouter();
+  const id = router.query.id;
+  const [currentWork, setCurrentWork] = useState(
+    works.find((work) => work.id == id)
+  );
+
+  useEffect(() => {
+    setCurrentWork(works.find((work) => work.id == id));
+  }, [id]);
+
+  if (!currentWork) return null;
+
   return (
     <Layout>
       <div className="wrapper">
@@ -19,14 +35,14 @@ const WorkSingle = () => {
                     data-splitting="chars"
                     data-animate="active"
                   >
-                    Photography
+                    {currentWork.realm}
                   </div>
                   <div
                     className="h-title splitting-text-anim-2 scroll-animate"
                     data-splitting="chars"
                     data-animate="active"
                   >
-                    Astronaut
+                    {currentWork.title}
                   </div>
                 </div>
               </div>
@@ -41,7 +57,7 @@ const WorkSingle = () => {
           <div className="image">
             <div
               className="img js-parallax"
-              style={{ backgroundImage: "url(assets/images/started_new.jpg)" }}
+              style={{ backgroundImage: `url(${currentWork.workMainImage})` }}
             />
           </div>
         </div>
@@ -118,15 +134,10 @@ const WorkSingle = () => {
                     data-animate="active"
                   >
                     <div className="img">
-                      <a
-                        href="assets/images/started-n12-920x1080.jpg"
-                        className="has-popup-image"
-                      >
-                        <img
-                          src="assets/images/started-n12-920x1080.jpg"
-                          alt="Image #1"
-                        />
-                      </a>
+                      <img
+                        src={currentWork.workIntroductionImages[0]}
+                        alt="Image #1"
+                      />
                     </div>
                   </div>
                 </div>
@@ -138,15 +149,10 @@ const WorkSingle = () => {
                     data-animate="active"
                   >
                     <div className="img">
-                      <a
-                        href="assets/images/started-n15-920x1080.jpg"
-                        className="has-popup-image"
-                      >
-                        <img
-                          src="assets/images/started-n15-920x1080.jpg"
-                          alt="Image #2"
-                        />
-                      </a>
+                      <img
+                        src={currentWork.workIntroductionImages[1]}
+                        alt="Image #2"
+                      />
                     </div>
                   </div>
                 </div>
@@ -200,15 +206,11 @@ const WorkSingle = () => {
           <div className="container">
             <Swiper {...mGalleryCarousel} className="swiper-container">
               <div className="swiper-wrapper">
-                <SwiperSlide className="swiper-slide">
-                  <img src="assets/images/started-n2_4.jpg" alt="Image #1" />
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                  <img src="assets/images/started-n20.jpg" alt="Image #2" />
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                  <img src="assets/images/started-n14.jpg" alt="Image #3" />
-                </SwiperSlide>
+                {currentWork.workResultImages.map((src, index) => (
+                  <SwiperSlide key={index} className="swiper-slide">
+                    <img src={src} alt={`Image #${index + 1}`} />
+                  </SwiperSlide>
+                ))}
               </div>
             </Swiper>
           </div>
@@ -219,7 +221,14 @@ const WorkSingle = () => {
             <div className="row">
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div className="h-titles h-navs">
-                  <Link legacyBehavior href="/work-single">
+                  <Link
+                    legacyBehavior
+                    href={
+                      id == 4
+                        ? "/work-single?id=1"
+                        : `/work-single?id=${+id + 1}`
+                    }
+                  >
                     <a>
                       <span
                         className="nav-arrow scrolla-element-anim-1 scroll-animate"

@@ -15,7 +15,8 @@ const Index = () => {
             <div
               className="slide"
               style={{
-                backgroundImage: "url(assets/images/started-n26-1920x1080.jpg)",
+                backgroundImage:
+                  "url(assets/images/thegame/THEGAMEPROJECT-01.jpg)",
               }}
             />
             {/* slide titles */}
@@ -41,7 +42,7 @@ const Index = () => {
                     </div>
                   </div>
                   <div className="more-bts">
-                    <Link legacyBehavior href="/work-single">
+                    <Link legacyBehavior href="/work-single?id=1">
                       <a
                         data-splitting=""
                         className="btn more-btn scrolla-element-anim-1"
@@ -59,7 +60,7 @@ const Index = () => {
             <div
               className="slide"
               style={{
-                backgroundImage: "url(assets/images/started-n15-1920x1080.jpg)",
+                backgroundImage: "url(assets/images/pth/cover.jpg)",
               }}
             />
             {/* slide titles */}
@@ -84,7 +85,7 @@ const Index = () => {
                     </div>
                   </div>
                   <div className="more-bts">
-                    <Link legacyBehavior href="/work-single">
+                    <Link legacyBehavior href="/work-single?id=2">
                       <a
                         data-splitting=""
                         className="btn more-btn scrolla-element-anim-1"
@@ -103,7 +104,7 @@ const Index = () => {
               className="slide"
               style={{
                 backgroundImage:
-                  "url(assets/images/started-n2_4-1920x1080.jpg)",
+                  "url(assets/images/musicofcorona/musicofcorona1.jpg)",
               }}
             />
             {/* slide titles */}
@@ -128,7 +129,7 @@ const Index = () => {
                     </div>
                   </div>
                   <div className="more-bts">
-                    <Link legacyBehavior href="/work-single">
+                    <Link legacyBehavior href="/work-single?id=3">
                       <a
                         data-splitting=""
                         className="btn more-btn scrolla-element-anim-1"
@@ -146,8 +147,7 @@ const Index = () => {
             <div
               className="slide"
               style={{
-                backgroundImage:
-                  "url(assets/images/started-n14_1-1000x1080.jpg)",
+                backgroundImage: "url(assets/images/foxy/foxy-01.png)",
               }}
             />
             {/* slide titles */}
@@ -172,7 +172,7 @@ const Index = () => {
                     </div>
                   </div>
                   <div className="more-bts">
-                    <Link legacyBehavior href="/work-single">
+                    <Link legacyBehavior href="/work-single?id=4">
                       <a
                         data-splitting=""
                         className="btn more-btn scrolla-element-anim-1"

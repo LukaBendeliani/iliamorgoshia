@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "title": "The Game",
+    "subTitle": "Creativity is lorem ipsum dolor sit amet consecuter",
+    "realm": "Photography",
+    "carouselImage": "/assets/images/thegame/THEGAMEPROJECT-01.jpg",
+    "workMainImage": "/assets/images/thegame/THEGAMEPROJECT-02.jpg",
+    "workIntroductionImages": [
+      "/assets/images/thegame/THEGAMEPROJECT-03.jpg",
+      "/assets/images/thegame/THEGAMEPROJECT-05.jpg"
+    ],
+    "workResultImages": [
+      "/assets/images/thegame/THEGAMEPROJECT-06.jpg",
+      "/assets/images/thegame/THEGAMEPROJECT-07.jpg",
+      "/assets/images/thegame/THEGAMEPROJECT-09.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Path to happiness",
+    "subTitle": "Creativity is lorem ipsum dolor sit amet consecuter",
+    "realm": "Photography",
+    "carouselImage": "/assets/images/pth/cover.jpg",
+    "workMainImage": "/assets/images/pth/inside.jpg",
+    "workIntroductionImages": [
+      "/assets/images/pth/pth1.jpg",
+      "/assets/images/pth/pth2.jpg"
+    ],
+    "workResultImages": [
+      "/assets/images/pth/pth3.jpg",
+      "/assets/images/pth/pth4.jpg",
+      "/assets/images/pth/pth5.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Corona Music",
+    "subTitle": "Creativity is lorem ipsum dolor sit amet consecuter",
+    "realm": "Photography",
+    "carouselImage": "/assets/images/musicofcorona/musicofcorona1.jpg",
+    "workMainImage": "/assets/images/musicofcorona/musicofcoronainside.jpg",
+    "workIntroductionImages": [
+      "/assets/images/musicofcorona/musicofcorono-01.jpg",
+      "/assets/images/musicofcorona/musicofcorono-02.jpg"
+    ],
+    "workResultImages": [
+      "/assets/images/musicofcorona/musicofcorono-03.jpg",
+      "/assets/images/musicofcorona/musicofcorono-01.jpg",
+      "/assets/images/musicofcorona/musicofcorono-02.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "foxy",
+    "subTitle": "Creativity is lorem ipsum dolor sit amet consecuter",
+    "realm": "Photography",
+    "carouselImage": "/assets/images/foxy/foxy-01.png",
+    "workMainImage": "/assets/images/foxy/foxy-02.png",
+    "workIntroductionImages": [
+      "/assets/images/foxy/foxy-03.png",
+      "/assets/images/foxy/foxy-04.png"
+    ],
+    "workResultImages": [
+      "/assets/images/foxy/foxy-05.png",
+      "/assets/images/foxy/foxy-06.png",
+      "/assets/images/foxy/foxy-01.png"
+    ]
+  }
+]
