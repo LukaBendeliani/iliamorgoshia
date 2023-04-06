@@ -1,24 +1,23 @@
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Footer from "../src/layout/Footer";
 import Layout from "../src/layout/Layout";
 import { mGalleryCarousel } from "../src/sliderProps";
-import works from "../works.json";
+import { works } from "../works";
+import Preloader from "../src/layout/Preloader";
 
 const WorkSingle = () => {
   const router = useRouter();
   const id = router.query.id;
-  const [currentWork, setCurrentWork] = useState(
-    works.find((work) => work.id == id)
-  );
+  const currentWork = works.find((work) => work.id == id);
 
-  useEffect(() => {
-    setCurrentWork(works.find((work) => work.id == id));
-  }, [id]);
+  if (!currentWork) return <Preloader />;
 
-  if (!currentWork) return null;
+  const nextTitle =
+    currentWork.id === works.length
+      ? works[0].title
+      : works.find((work) => work.id === currentWork.id + 1).title;
 
   return (
     <Layout>
@@ -56,7 +55,7 @@ const WorkSingle = () => {
         >
           <div className="image">
             <div
-              className="img js-parallax"
+              className="img"
               style={{ backgroundImage: `url(${currentWork.workMainImage})` }}
             />
           </div>
@@ -68,22 +67,22 @@ const WorkSingle = () => {
               <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Client</strong> Envato
+                    <strong>Client</strong> {currentWork.doneFor}
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Category</strong> Photography
+                    <strong>Category</strong> {currentWork.category}
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Year</strong> 2020
+                    <strong>Year</strong> {currentWork.year}
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Website</strong> bslthemes.com
+                    <strong>Credits</strong> {currentWork.credits}
                   </div>
                 </div>
               </div>
@@ -100,7 +99,7 @@ const WorkSingle = () => {
                     className="m-title scrolla-element-anim-1 scroll-animate"
                     data-animate="active"
                   >
-                    Introduction
+                    Cover
                   </div>
                 </div>
               </div>
@@ -109,15 +108,7 @@ const WorkSingle = () => {
                   className="description-text scrolla-element-anim-1 scroll-animate"
                   data-animate="active"
                 >
-                  <p>
-                    It is not enough that we build products that function, that
-                    are understandable and usable, we also need to build
-                    products that bring joy and excitement, pleasure and fun,
-                    and, yes, beauty to people’s lives. Creativity is to
-                    discover a question that has never been asked. If one brings
-                    up an idiosyncratic question, the answer he gives will
-                    necessarily be unique as well.
-                  </p>
+                  <p>{currentWork.subTitle}</p>
                 </div>
               </div>
             </div>
@@ -170,7 +161,7 @@ const WorkSingle = () => {
                     className="m-title scrolla-element-anim-1 scroll-animate"
                     data-animate="active"
                   >
-                    Result
+                    About
                   </div>
                 </div>
               </div>
@@ -179,20 +170,7 @@ const WorkSingle = () => {
                   className="description-text scrolla-element-anim-1 scroll-animate"
                   data-animate="active"
                 >
-                  <p>
-                    It is not enough that we build products that function, that
-                    are understandable and usable, we also need to build
-                    products that bring joy and excitement, pleasure and fun,
-                    and, yes, beauty to people’s lives. Creativity is to
-                    discover a question that has never been asked. If one brings
-                    up an idiosyncratic question, the answer he gives will
-                    necessarily be unique as well.
-                  </p>
-                  <p>
-                    Creativity is to discover a question that has never been
-                    asked. If one brings up an idiosyncratic question, the
-                    answer he gives will necessarily be unique as well.
-                  </p>
+                  <p>{currentWork.about}</p>
                 </div>
               </div>
             </div>
@@ -241,7 +219,7 @@ const WorkSingle = () => {
                         data-splitting="chars"
                         data-animate="active"
                       >
-                        Astronaut
+                        {nextTitle}
                       </span>
                     </a>
                   </Link>

@@ -1,5 +1,4 @@
 import { Fragment, useEffect } from "react";
-import ImageView from "../components/ImageView";
 import { activeAnimation, initCursor } from "../utils";
 import Header from "./Header";
 const Layout = ({ children }) => {
@@ -27,9 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <Fragment>
-      <ImageView />
       <div className="container-page">
-        {/* Header */}
         <Header />
         {children}
       </div>
