@@ -81,7 +81,10 @@ const WorkSingle = () => {
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                  <div className="details-label">
+                  <div
+                    style={{ whiteSpace: "pre-line" }}
+                    className="details-label"
+                  >
                     <strong>Credits</strong> {currentWork.credits}
                   </div>
                 </div>
@@ -93,7 +96,7 @@ const WorkSingle = () => {
         <div className="section section-inner m-description">
           <div className="container">
             <div className="row">
-              <div className="col-xs-12 col-sm-12 col-md-12 align-left col-lg-12">
+              {/* <div className="col-xs-12 col-sm-12 col-md-12 align-left col-lg-12">
                 <div className="m-titles">
                   <div
                     className="m-title scrolla-element-anim-1 scroll-animate"
@@ -102,7 +105,7 @@ const WorkSingle = () => {
                     Cover
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div
                   className="description-text scrolla-element-anim-1 scroll-animate"
@@ -202,7 +205,7 @@ const WorkSingle = () => {
                   <Link
                     legacyBehavior
                     href={
-                      id == 4
+                      id == 5
                         ? "/work-single?id=1"
                         : `/work-single?id=${+id + 1}`
                     }

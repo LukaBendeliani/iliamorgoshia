@@ -30,9 +30,9 @@ const Index = () => {
                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                       {/* title */}
                       <div className={`titles ${work.theme}`}>
-                        <div className="label scrolla-element-anim-1">
+                        {/* <div className="label scrolla-element-anim-1">
                           {work.category}
-                        </div>
+                        </div> */}
                         <div className="title">
                           <span
                             className="title-inner splitting-text-anim-2"
