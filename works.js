@@ -60,16 +60,16 @@ export const works = [
     about:
       "Music of corona is a small Music video made for Covid -19 Awareness. The main target was the younger generation who don't understand the importance of covid-19 regulations. Music is created with everyday items we use for Covid safety. It is a more fun way to keep in mind all the important items that help us stay healthy.",
     theme: "white",
-    carouselImage: "/assets/images/MusicOfCorona/cover.webp",
-    workMainImage: "/assets/images/MusicOfCorona/inside.webp",
+    carouselImage: "/assets/images/musicofcorona/cover.webp",
+    workMainImage: "/assets/images/musicofcorona/inside.webp",
     workIntroductionImages: [
-      "/assets/images/MusicOfCorona/corona-1.webp",
-      "/assets/images/MusicOfCorona/corona-2.webp",
+      "/assets/images/musicofcorona/corona-1.webp",
+      "/assets/images/musicofcorona/corona-2.webp",
     ],
     workResultImages: [
-      "/assets/images/MusicOfCorona/corona-3.webp",
-      "/assets/images/MusicOfCorona/corona-1.webp",
-      "/assets/images/MusicOfCorona/corona-2.webp",
+      "/assets/images/musicofcorona/corona-3.webp",
+      "/assets/images/musicofcorona/corona-1.webp",
+      "/assets/images/musicofcorona/corona-2.webp",
     ],
   },
   {
@@ -84,16 +84,16 @@ export const works = [
     about:
       "I wanted to create a concept brand. In this case,I created a secure browser called Foxy.This project started when a war broke out in Ukraine.Hearing about how politicians steal personal information from various browsers sparked an idea and I created this brand logo and type.",
     theme: "white",
-    carouselImage: "/assets/images/Foxy/foxy-01.jpg",
-    workMainImage: "/assets/images/Foxy/foxy-02.jpg",
+    carouselImage: "/assets/images/foxy/foxy-01.jpg",
+    workMainImage: "/assets/images/foxy/foxy-02.jpg",
     workIntroductionImages: [
-      "/assets/images/Foxy/foxy-03.jpg",
-      "/assets/images/Foxy/foxy-04.jpg",
+      "/assets/images/foxy/foxy-03.jpg",
+      "/assets/images/foxy/foxy-04.jpg",
     ],
     workResultImages: [
-      "/assets/images/Foxy/foxy-05.jpg",
-      "/assets/images/Foxy/foxy-06.jpg",
-      "/assets/images/Foxy/foxy-01.jpg",
+      "/assets/images/foxy/foxy-05.jpg",
+      "/assets/images/foxy/foxy-06.jpg",
+      "/assets/images/foxy/foxy-01.jpg",
     ],
   },
 ];
