@@ -51,7 +51,7 @@ export const works = [
     id: 3,
     title: "Music of corona",
     subTitle:
-      'Experience the catchy and creative "Music of Corona" music video – a fun and engaging way to promote COVID-19 awareness among younger generations to encourage adherence to crucial safety measures. Through the use everyday items, “Music of Corona,” will inspire you to remember the importance of staying healthy.',
+      'Experience the catchy and creative "Music of Corona" music video - a fun and engaging way to promote COVID-19 awareness among younger generations to encourage adherence to crucial safety measures. Through the use everyday items, “Music of Corona,” will inspire you to remember the importance of staying healthy.',
     doneFor: "DVV-international",
     category: "Video production",
     year: "2020",
@@ -59,16 +59,16 @@ export const works = [
     about:
       '"Music of Corona" is a music video designed to promote awareness of crucial safety measures installed against COVID-19. Created with the younger generation in mind, the video uses everyday items related to COVID-19 to and its prevention, showcasing the importance of following regulations during these challenging times. The catchy music, coupled with fun and engaging visual display, makes it an effective tool to encourage viewers to remember the essential items that help keep them and their communities safe. Watch "Music of Corona" to join the movement for a safer, healthier world.',
     theme: "white",
-    carouselImage: "/assets/images/musicofcorona/cover.webp",
-    workMainImage: "/assets/images/musicofcorona/inside.webp",
+    carouselImage: "/assets/images/MusicOfCorona/cover.webp",
+    workMainImage: "/assets/images/MusicOfCorona/inside.webp",
     workIntroductionImages: [
-      "/assets/images/musicofcorona/corona-1.webp",
-      "/assets/images/musicofcorona/corona-2.webp",
+      "/assets/images/MusicOfCorona/corona-1.webp",
+      "/assets/images/MusicOfCorona/corona-2.webp",
     ],
     workResultImages: [
-      "/assets/images/musicofcorona/corona-3.webp",
-      "/assets/images/musicofcorona/corona-1.webp",
-      "/assets/images/musicofcorona/corona-2.webp",
+      "/assets/images/MusicOfCorona/corona-3.webp",
+      "/assets/images/MusicOfCorona/corona-1.webp",
+      "/assets/images/MusicOfCorona/corona-2.webp",
     ],
   },
   {
