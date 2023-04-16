@@ -17,8 +17,8 @@ const Footer = () => {
                   className="h-text scrolla-element-anim-1 scroll-animate"
                   data-animate="active"
                 >
-                  Ridgewood Queens, <br />
-                  NY 11385, USA
+                  Georgia, <br />
+                  Tbilisi
                 </div>
               </div>
             </div>
@@ -82,9 +82,9 @@ const Footer = () => {
                   data-animate="active"
                 >
                   <p>
-                    asteragency@domain.com
+                    iliamorgoshia@gmail.com
                     <br />
-                    +012 (234) 567 78
+                    +995 (599) 922 426
                   </p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ const Footer = () => {
                 className="copyright-text scrolla-element-anim-1 scroll-animate"
                 data-animate="active"
               >
-                Copyright © 2022 Aster
+                Copyright © 2023 Ilia Morgoshia
               </div>
             </div>
           </div>

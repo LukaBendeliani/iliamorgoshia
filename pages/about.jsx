@@ -45,30 +45,28 @@ const About = () => {
           <div className="container">
             <div className="row">
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h1>
-                  We are startup
-                  <br />
-                  digital agency
-                </h1>
+                <h1>About me</h1>
               </div>
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                A Los Angeles based studio building handcrafted websites and
-                brands for companies and all over the world. It is not enough
-                that we build products that function, that are understandable
-                and usable, we also need to build products that bring joy and
-                excitement, pleasure and fun, and, yes, beauty to people’s
-                lives. Creativity is to discover a question that has never been
-                asked. If one brings up an idiosyncratic questionl.
-              </div>
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                The development of digital marketing is inseparable from
-                technology development. One of the first key events happened in
-                1971, when Ray Tomlinson sent the first email, and his
-                technology set the platform to allow people to send and receive
-                files through different machines. However, the more recognizable
-                period as being the start of Digital Marketing is 1990 as this
-                was where the Archie search engine was created as an index for
-                FTP sites.
+              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                Hi there, I'm Ilia, an aspiring Art Director from Tbilisi,
+                Georgia. When I'm not spending time with my four-legged friend
+                Toby, I'm either playing video games or indulging in some
+                quality Netflix binges.
+                <br />
+                <br /> I know. I’m basic.
+                <br />
+                <br />
+                I'm also enrolled in the Art Direction program at Miami Ad
+                School Europe, learning from industry professionals. My goal is
+                to master the art of visual storytelling and bring my creative
+                visions to life. I've always been captivated by the magic of
+                movies, production, and the power of visual storytelling. This
+                passion has been my driving force throughout my career journey.
+                I'm always seeking new ways to expand my knowledge and skills in
+                this field. I believe in using creativity and imagination to
+                tell stories that captivate and inspire audiences. Working with
+                creative people and realizing our visions is something I'm
+                really excited about.
               </div>
             </div>
           </div>
