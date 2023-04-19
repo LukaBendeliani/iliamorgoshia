@@ -17,7 +17,7 @@ const Footer = () => {
                   className="h-text scrolla-element-anim-1 scroll-animate"
                   data-animate="active"
                 >
-                  Georgia, <br />
+                  Georgia <br />
                   Tbilisi
                 </div>
               </div>

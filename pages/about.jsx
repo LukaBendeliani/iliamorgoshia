@@ -19,7 +19,7 @@ const About = () => {
                     data-splitting="chars"
                     data-animate="active"
                   >
-                    About us
+                    About me
                   </div>
                 </div>
               </div>
@@ -159,7 +159,7 @@ const About = () => {
                         <i aria-hidden="true" className="fas fa-phone-alt" />
                       </div>
                       <div className="name">Phone:</div>
-                      <div className="text">+1 (800) 123 56 89</div>
+                      <div className="text">+995 (599) 922 426</div>
                     </div>
                   </div>
                   <div className="services-col col-xs-12 col-sm-6 col-md-6 col-lg-4">
@@ -171,24 +171,7 @@ const About = () => {
                         <i aria-hidden="true" className="fas fa-at" />
                       </div>
                       <div className="name">E-mail:</div>
-                      <div className="text">aster@domain.com</div>
-                    </div>
-                  </div>
-                  <div className="services-col col-xs-12 col-sm-6 col-md-6 col-lg-4">
-                    <div
-                      className="services-item scrolla-element-anim-1 scroll-animate"
-                      data-animate="active"
-                    >
-                      <div className="icon">
-                        <i
-                          aria-hidden="true"
-                          className="fab fa-font-awesome-flag"
-                        />
-                      </div>
-                      <div className="name">Location:</div>
-                      <div className="text">
-                        Marollem St. 32, New York, USA.
-                      </div>
+                      <div className="text">iliamorgoshia@gmail.com</div>
                     </div>
                   </div>
                 </div>
